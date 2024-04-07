@@ -1,0 +1,24 @@
+.movieApp {
+  @apply max-h-screen min-h-screen min-w-full max-w-7xl overflow-hidden bg-black text-center;
+}
+
+.movieAppLayout {
+  @apply container relative mx-auto grid w-full grid-rows-[auto_1fr] items-center gap-y-7 overflow-y-auto rounded-md border border-purple-400 p-4 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 lg:grid-cols-4;
+  height: calc(100dvh - 150px);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 1em;
+}
+
+::-webkit-scrollbar-track {
+  @apply rounded-full bg-purple-800 bg-opacity-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full border border-purple-700 bg-orange-300;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply border-purple-700 bg-purple-400 bg-opacity-70;
+}
